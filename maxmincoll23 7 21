@@ -1,0 +1,25 @@
+import java.util.*;
+class maxmincoll
+{
+public static void main(String args[])
+{
+Scanner sc = new Scanner (System.in);
+Stack<Integer> v=new Stack<Integer>();
+System.out.print("enter size");
+int n=sc.nextInt();
+System.out.print("enter n values");
+for(int i=0;i<n;i++)
+{
+v.push(sc.nextInt());
+}
+System.out.print("Max ="+Collections.max(v));
+System.out.print("Min ="+Collections.min(v));
+}
+}
+
+
+
+D:\>java maxmincoll.java
+enter size13
+enter n values18 36 39 47 59 78 3 50 20 26 40 13 46 9
+Max =78Min =3
